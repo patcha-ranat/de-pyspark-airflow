@@ -3,6 +3,8 @@
 
 *First of all, I intended to remove mock data generator script and requirement detail to avoid reproducing full-process of this project due to confidentiality, but instead, mock data sample was uploaded*
 
+Data Ingestion of local parquet files to docker postgresDB using PySpark tightly coupled with Airflow as custom operator orchestrated by docker-compose
+
 ## Overview
 ![overview_architecture](./picture/overview_architecture.png)
 
