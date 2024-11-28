@@ -1,6 +1,5 @@
 venv:
 	python -m venv pyenv
-	chmod +x pyenv/Scripts/activate
 
 install:
 	pip install -r requirements.txt

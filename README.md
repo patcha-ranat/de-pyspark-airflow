@@ -1,7 +1,7 @@
 # DE-PySpark-Airflow
 *patcharanat p.*
 
-*First of all, author intended to remove mock data generator script and requirement detail to avoid reproducing full-process of this project due to confidentiality, but instead, mock data sample was uploaded*
+*First of all, I intended to remove mock data generator script and requirement detail to avoid reproducing full-process of this project due to confidentiality, but instead, mock data sample was uploaded*
 
 ## Overview
 ![overview_architecture](./picture/overview_architecture.png)
@@ -25,8 +25,6 @@
     python -m pyenv
     # or python3 -m pyenv
     # depends on your python installation
-
-    chmod +x pyenv/Scripts/activate
 
     source pyenv/Scripts/activate
 
@@ -93,7 +91,7 @@ This project introduced 2 solutions as the following:
 
 ![docker_resources](./picture/docker_resources.png)
 
-***Closing remark**: Using `repartition()` without appropriate spark configuration tuning may lead to data consistency issue and inaccurate data ingestion. Tuning spark configuration by tuning memory, cores, and executor instances might not improve in performance for local processing. I presumed it related to limitation in running job locally in a single machine.*
+***Closing remark**: Using `repartition()` without appropriate spark configuration tuning may lead to threads issue and inaccurate data ingestion. Tuning spark configuration by tuning memory, cores, and executor instances might not improve in performance for local processing. I presumed it related to limitation in running job locally in a single machine.*
 
 ## 3. References
 - [How to speed up spark df.write jdbc to postgres databse | Stack Overflow](https://stackoverflow.com/questions/58676909/how-to-speed-up-spark-df-write-jdbc-to-postgres-database)
